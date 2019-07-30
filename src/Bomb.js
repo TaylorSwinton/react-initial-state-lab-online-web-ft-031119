@@ -10,7 +10,7 @@ export default class Bomb extends Component {
     }
 
     timingBomb = () => {
-        if (this.props.secondsLeft > 0) {
+        if (this.state.secondsLeft > 0) {
             return `${this.state.secondsLeft} seconds left before I go boom!`
         } else {
             return 'Boom!'
